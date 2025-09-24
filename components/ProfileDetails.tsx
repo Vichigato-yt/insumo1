@@ -1,8 +1,7 @@
 import "@/global.css"
-import IconButton from "@/components/IconButton";
+import IconButton from "@/components/ui/IconButton";
 import React from 'react'
 import { Image, Text, View, Alert } from 'react-native'
-import Ionicons from '@expo/vector-icons/Ionicons';
 
 const ProfileDetails = () => {
   return (
@@ -15,28 +14,10 @@ const ProfileDetails = () => {
         <Text className="text-2xl font-bold">Vicente Mendieta</Text>
         <Text className="text-xl text-gray-400 font-bold">Team Fortress 2 player</Text>
         <Text className="text-xl text-gray-400 font-bold">Informático</Text>
-        
-        <IconButton 
-        Icon=
-        {<Ionicons name="logo-instagram" size={35} color="black"></Ionicons>}
-        onPress={
-          () => avisarAlerta("instagram")
-        }
-        />
-        <IconButton 
-        Icon=
-        {<Ionicons name="logo-xbox" size={35} color="black"></Ionicons>}
-        onPress={
-          () => avisarAlerta("Xbox")
-        }
-        />
-        <IconButton 
-        Icon=
-        {<Ionicons name="logo-x" size={35} color="black"></Ionicons>}
-        onPress={
-          () => avisarAlerta("X Twitter")
-        }
-        />
+        <IconButton Icon='logo-instagram'></IconButton>
+        <IconButton Icon='logo-steam'></IconButton>
+        <IconButton Icon='logo-xbox'></IconButton>
+        <IconButton Icon='logo-x'></IconButton>
   </View>
   )
 }
