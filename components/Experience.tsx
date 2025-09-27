@@ -4,8 +4,9 @@ import CustomText from "@/components/ui/CustomText";
 
 const Experience = () => {
   return (
-    <View>
+    <View className='p-4'>
       <CustomText variant="semitext" value="Experience"></CustomText>
+      
     </View>
   )
 }

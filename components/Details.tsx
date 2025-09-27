@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import IconButton from "@/components/ui/IconButton";
 import CustomText from "@/components/ui/CustomText";
+import Experience from "@/components/Experience";
 
 
 const Details = () => {
@@ -16,6 +17,7 @@ const Details = () => {
         </View>
       <CustomText variant="semitext" value="Profession"></CustomText>
       <CustomText variant="normal" value="Estudiante UETS"></CustomText>      
+      <Experience></Experience>
     </View>
 
   )

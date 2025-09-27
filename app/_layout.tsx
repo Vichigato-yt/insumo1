@@ -1,13 +1,17 @@
 import { Stack } from "expo-router";
 
+
 export default function RootLayout() {
   return <Stack
   screenOptions={{
+    headerStyle:{
+      backgroundColor:"black",
+    },
+    headerTitleStyle:{
+      color:"white",
+    },
     headerTitleAlign:"center",
-    headerTitle:"",
-    headerShown:true,
-    statusBarStyle:"dark",
-    statusBarHidden:true,
+    headerTitle:"Profile Details",
   }
   }
   >
