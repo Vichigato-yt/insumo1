@@ -16,10 +16,10 @@ const ProfileDetails = () => {
         <CustomText variant="subtitle" value="Team Fortress 2"></CustomText>
 
         <View className="flex-row gap-4">
-          <IconButton Icon='logo-instagram' color="blue" tam={35}></IconButton>
-          <IconButton Icon='logo-steam' color="black" tam={35}></IconButton>
-          <IconButton Icon='logo-tiktok' color="black" tam={35}></IconButton>
-          <IconButton Icon='logo-x' color="black" tam={35}></IconButton>
+          <IconButton Icon='logo-instagram' color="blue" tam={25}></IconButton>
+          <IconButton Icon='logo-steam' color="black" tam={25}></IconButton>
+          <IconButton Icon='logo-tiktok' color="black" tam={25}></IconButton>
+          <IconButton Icon='logo-x' color="black" tam={25}></IconButton>
         </View>
     </View>
   )

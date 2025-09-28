@@ -3,7 +3,7 @@ import React from 'react'
 
 interface CustomTextProps {
     value:string;
-    variant: "normal"|"subtitle"|"title"|"purple"|"semitext";
+    variant: "normal"|"subtitle"|"title"|"purple"|"semitext"|"enormal"|"etitle";
 }
 
 const CustomText = ({value="hola",variant="normal"}:CustomTextProps) => {
@@ -19,15 +19,19 @@ export default CustomText
 function selectVariant(variant:string):string{
     switch(variant){
         case "normal":
-            return "text-gray-400 p-4 text-3xl font-bold text-center";
+            return "text-white p-4 text-xl font-bold text-center";
         case "subtitle":
-            return "text-gray-400 font-normal text-xl";
+            return "text-gray-400 font-normal text-l";
         case "title":
-            return "text-black font-bold text-2xl";
+            return "text-black font-bold text-xl";
         case "purple":
-            return "text-purple-500 font-bold text-2xl";
+            return "text-purple-500 font-bold text-xl";
         case "semitext":
-            return "p-4 text-xl font-bold";
+            return "p-4 text-l text-white";
+        case "etitle":
+            return "text-white font-bold text-s p-4";
+        case "enormal":
+            return "text-gray-400 p-4 text-xs";
         default:
             return "text-black font-normal";
     }
